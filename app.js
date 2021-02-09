@@ -31,14 +31,21 @@ hours=d3%(1000*60*60*24)/(1000*60*60)
 console.log(hours)
 
 // minutes=d3%(1000*60*60)/
-// console.log(c-date)
- var date2 = new Date("2020/12/25 00:00:00");
- var date1=new Date()
 
+function  getTargetDate(){
+	let currentDay = new Date()
+	// console.log(currentDay.getFullYear();)
+	let year = currentDay.getFullYear();
+	let targetDate = new Date(`${year}/12/25 00:00:00`)
+
+	return targetDate
+}
  
 function getDifference(){
 
 	 var date1=new Date()
+
+	 let date2 =getTargetDate()
 
 
 	var diff=(date2-date1)/1000
