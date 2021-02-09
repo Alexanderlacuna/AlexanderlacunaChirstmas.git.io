@@ -69,7 +69,9 @@ function getDifference(){
 
 	// leftSec
 
-	// console.log(timer) 
+	// console.log(timer)
+
+	console.log(`${days}days ${hrs}hrs`) 
 
 
 	timer.innerHTML=`<span  class="days">Days:${days} </span><span class="hours">Hours:${hrs}</span><span class="minutes"> Minutes:${minutes} </span><span class="seconds">Seconds ${seconds}</span>` 
